@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Загадка</title>
+</head>
+<body>
+<script>
+    var answer = parseInt(Math.random()*100);
+    while (true) {
+        var userAnswer = parseInt(prompt("Введите число от 0 до 100, для выхода - q"));
+        if (userAnswer = "q") {
+            break;
+        }
+        if (userAnswer > answer) {
+            alert("Ваш ответ слишком большой");
+        } else if (userAnswer < answer){
+            alert("Ваш ответ слишком маленький");
+        } else if (userAnswer == answer){
+            alert("Вы угадали!");
+            break; // тут алерт не будет видно...
+        } else {
+            alert("Вы не ввели число");
+        }
+    }
+
+
+</script>
+</body>
+</html>

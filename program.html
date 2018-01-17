@@ -6,9 +6,11 @@
 </head>
 <body>
     <script>
-        var name = prompt("Ты кто?");
-        alert("Привет, Мир и " + name);
-        alert("alert");
+        var uah = prompt("Введите сумму в грн. ");
+        var usd = 29;
+        var eur = 35;
+        alert("В долларах - " + (uah/usd).toFixed() +
+              "\nВ евро - " + (uah/eur).toFixed() );
     </script>
 </body>
 </html>

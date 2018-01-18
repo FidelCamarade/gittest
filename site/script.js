@@ -29,3 +29,32 @@ function playGues2() {
 
     }
 }
+
+var correctAnswerCount = 0;
+
+function askQuestion(textBoxId, answer) {
+    var userAnswer = document.getElementById(textBoxId).value;
+    userAnswer = userAnswer.toLocaleLowerCase();
+    if (userAnswer == answer) {
+        correctAnswerCount++;
+    }
+}
+
+
+function playPuzzle() {
+    correctAnswerCount = 0;
+    askQuestion("userAnswer1", "капуста");
+    askQuestion("userAnswer2", "елка");
+
+/*    var userAnswer = document.getElementById("userAnswer1").value;
+    if (userAnswer == "капуста") {
+        correctAnswerCount++;
+    }
+
+    userAnswer = document.getElementById("userAnswer2").value;
+    if (userAnswer == "елка") {
+        correctAnswerCount++;
+    }*/
+    alert("Правильных ответов - " + correctAnswerCount);
+
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пазл</title>
+</head>
+<body>
+<script>
+    var score = 0;
+
+    function askQuestion(question, answer) {
+        var userAnswer = prompt(question).toLowerCase();
+        if (userAnswer == answer) {
+            alert("Вы угадали");
+            score++;
+        } else {
+            alert("Вы не угадали")
+        }
+    }
+
+    askQuestion("Загадка1", "ответ1");
+    askQuestion("Загадка2", "ответ2");
+
+    alert("Правильных ответов: " + score)
+</script>
+
+</body>
+</html>

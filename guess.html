@@ -8,17 +8,19 @@
 <script>
     var answer = parseInt(Math.random()*100);
     while (true) {
-        var userAnswer = parseInt(prompt("Введите число от 0 до 100, для выхода - q"));
-        if (userAnswer = "q") {
+        var userAnswer = prompt("Введите число от 0 до 100, для выхода - q");
+        if (userAnswer == "q") {
             break;
         }
+        userAnswer = parseInt(userAnswer);
+
         if (userAnswer > answer) {
             alert("Ваш ответ слишком большой");
         } else if (userAnswer < answer){
             alert("Ваш ответ слишком маленький");
         } else if (userAnswer == answer){
             alert("Вы угадали!");
-            break; // тут алерт не будет видно...
+            break;
         } else {
             alert("Вы не ввели число");
         }

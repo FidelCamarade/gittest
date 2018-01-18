@@ -1,3 +1,28 @@
+function playGues1() {
+    var answer = parseInt(Math.random() * 100);
+    // var playerNum = 1;
+
+    while (true) {
+        var userAnswer = prompt("Угадайте число от 0 до 100, для выхода - q");
+        if (userAnswer == "q") {
+            break;
+        }
+        userAnswer = parseInt(userAnswer);
+
+        if (userAnswer > answer) {
+            alert("Ваш ответ слишком большой");
+        } else if (userAnswer < answer) {
+            alert("Ваш ответ слишком маленький");
+        } else if (userAnswer == answer) {
+            alert("Вы угадали! Ответ - " + userAnswer);
+            break;
+        } else {
+            alert("Вы не ввели число");
+        }
+    }
+}
+
+
 function playGues2() {
     var answer = parseInt(Math.random() * 100);
     var playerNum = 1;
@@ -29,6 +54,8 @@ function playGues2() {
 
     }
 }
+
+// для загадок:
 
 var correctAnswerCount = 0;
 

@@ -5,11 +5,14 @@ body {
 
 /*стиль меню*/
 .menu li {
-    list-style-position: inherit;
-    font-style: normal;
-    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #40678a;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
     list-style-type: none;
-    margin-left: 0;
+    display: inline;
 }
 
 /*цвет текста ссылок меню*/
@@ -62,4 +65,8 @@ form fieldset input[type=text] {
 
 .detail_img {
     outline: 1px solid darkred;
+}
+
+footer {
+    text-align: center;
 }

@@ -1,27 +1,32 @@
 body {
     background-color: #f8f8f8;
-    font-family: SanFrancisco, Verdana;
+    font-family: Verdana;
 }
 
+/*стиль меню*/
 .menu li {
-    font-style: oblique;
+    list-style-position: inherit;
+    font-style: normal;
     font-size: 20px;
     list-style-type: none;
     margin-left: 0;
-
 }
 
+/*цвет текста ссылок меню*/
 .menu li a {
     color: #54bfff;
+    text-decoration: none;
 }
 
-h2, h3, h4 {
+/*стили всех заголовков-описаний на странице товара*/
+h3.description_header {
     color: #000;
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
 }
 
+/*стиль текста краткого описания*/
 p.short_description {
     color: #707070;
     font-size: 14px;
@@ -29,11 +34,32 @@ p.short_description {
     line-height: 16px;
 }
 
+/*стиль текста подробного описание*/
 p.detail_description {
     color: #484343;
     font-size: 16px;
-
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+
+/* стиль характеристик товара*/
+.description_header + ul li {
+    color: #2e353d;
+    font-size: 14px;
+    font-style: italic;
+    list-style-type: square;
+}
+
+form fieldset input[type=text] {
+    /*например*/
+}
+
+.contact_form {
+    width: 300px;
+    color: orangered;
+}
+
+.detail_img {
+    outline: 1px solid darkred;
 }

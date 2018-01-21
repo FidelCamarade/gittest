@@ -3,16 +3,32 @@ body {
     font-family: Verdana;
 }
 
+/* ------------------------- */
+/* -= шапка сайта + меню =- */
+
+div.header {
+    /*height: 200px;*/
+    background: lavender;
+    border-bottom: 1px solid darkslategrey;
+}
+
+.sitelogo {
+    background-image: url("./img/logo.png");
+    height: 104px;
+    width: 333px;
+    background-size: cover;
+}
+
 /*стиль меню*/
 .menu li {
     width: 100px;
-    height: 30px;
+    height: 20px;
     border: 1px solid #40678a;
     text-align: center;
-    line-height: 30px;
-    font-size: 16px;
+    line-height: 20px;
+    font-size: 14px;
     list-style-type: none;
-    display: inline;
+    display: block;
 }
 
 /*цвет текста ссылок меню*/
@@ -21,6 +37,32 @@ body {
     text-decoration: none;
 }
 
+/*цвет ссылок меню при наведении*/
+.menu a:hover:after, .menu a:active:after {
+    color: orangered;
+    content: " <";
+}
+
+/* -= СТРАНИЧКА КАТАЛОГА =- */
+/* блок с элемента каталога */
+div.catalog_element {
+    border: dotted 1px #2e353d;
+    margin-right: 20px;
+    width: 300px;
+    height: 270px;
+    float: left;
+}
+
+/* картинки в блоке элемента каталоге */
+.catalog_element img {
+    height: 200px;
+    outline: solid 1px #8cbbd3;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* -= СТРАНИЦА ОПИСАНИЯ ТОВАРА =- */
 /*стили всех заголовков-описаний на странице товара*/
 h3.description_header {
     color: #000;
@@ -54,19 +96,42 @@ p.detail_description {
     list-style-type: square;
 }
 
-form fieldset input[type=text] {
-    /*например*/
-}
-
-.contact_form {
-    width: 300px;
-    color: orangered;
-}
-
+/* стиль картинки на странице описания товара */
 .detail_img {
     outline: 1px solid darkred;
 }
 
+/* убрать рамку при наведениии на картинку */
+.detail_img:hover {
+    outline: none;
+}
+
+
+/* ------------------------- */
+/* -= СТРАНИЦА КОНТАКТОВ =-*/
+
+/*форма связи, изменить размер поллей для вводе и текст*/
+.contact_form  {
+    width: 300px;
+    color: orangered;
+}
+
+/*в поле фио все слова с заглавной*/
+.contact input[name="name"] {
+    text-transform: capitalize;
+}
+
+/*изменить стиль поля имейл при нажатии*/
+.contact input[type="email"]:active {
+     /*например*/
+    color: limegreen;
+    background-color: sandybrown;
+ }
+
+/* ------------------------- */
+/* -= подвал =- */
+
 footer {
+    border-top: 1px solid #606060;
     text-align: center;
 }

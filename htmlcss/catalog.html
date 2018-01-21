@@ -7,31 +7,47 @@
     <title>Магазин Ceresit | Каталог</title>
 </head>
 <body>
-<ul class="menu">
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="contact.html">Контакты</a></li>
-</ul>
-<hr>
+<div class="header">
+    <div class="sitelogo"></div> <!--лого задаётся в style.css-->
+    <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+    </ul>
+</div>
 
 <h1>Каталог материалов</h1>
-<a href="./catalog/cm11.html">
-    <img src="./img/cm11.png" alt="CM11" width="215" height="224"><br>
-    <p>Клеющая смесь для плитки CM11</p>
-</a><br>
 
-<a href="./catalog/cm17.html">
-    <img src="./img/cm17.png" alt="CM17"  width="107" height="205"><br>
-    <p>Эластичная клеющая смесь для плитки CM17</p>
-    </a><br>
 
-<a href="./catalog/cm74.html">
-    <img src="./img/cm74.jpg" alt="CM74"  width="215" height="181"><br>
-    <p>Эпоксидный клей для плитки CM17</p>
-</a><br>
+<div class="catalog">
+    <div class="catalog_element">
+        <a href="./catalog/cm11.html">
+            <img src="./img/cm11.png" alt="CM11"><br>
+            <p>Клеющая смесь для плитки CM11</p>
+        </a>
+        <br>
+    </div>
+
+    <div class="catalog_element">
+        <a href="./catalog/cm17.html">
+            <img src="./img/cm17.png" alt="CM17"><br>
+            <p>Эластичная клеющая смесь для плитки CM17</p>
+        </a>
+        <br>
+    </div>
+
+    <div class="catalog_element">
+        <a href="./catalog/cm74.html">
+            <img src="./img/cm74.jpg" alt="CM74"><br>
+            <p>Эпоксидный клей для плитки CM17</p>
+        </a>
+        <br>
+    </div>
+
+</div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<footer>
+<footer class="footer">
     <p>&copy;&nbsp; Все права защищены.</p>
 </footer>
 </body>
